@@ -34,15 +34,21 @@ docker run -p 3000:3000 OC-OnlyChats-FrontEnd
 ## Building and Running the Dockerfile
 1. Navigate to the project directory: 
 
+```
 cd OC-OnlyChats-FrontEnd
+```
 
 2. Build the Docker image: 
 
+```
 docker build -t OC-OnlyChats-FrontEnd .
+```
 
 3. Start a new Docker container: 
 
+```
 docker run -p 3000:3000 OC-OnlyChats-FrontEnd
+```
 
 4. Open your browser and navigate to `http://localhost:3000` to view the application.
 
