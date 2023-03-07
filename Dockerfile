@@ -10,8 +10,11 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-RUN npm install react-router-dom
+# RUN npm install react-router-dom
 
+# RUN npm install bootstrap --save
+
+# RUN npm install --save animate.css-react
 # Copy the rest of the application code to the container
 COPY . .
 
