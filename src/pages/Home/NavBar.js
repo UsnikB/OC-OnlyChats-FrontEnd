@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
+import "./home.css";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from './assets/img/logo.svg';
-import { useNavigate } from 'react-router-dom';
+import logo from "./assets/img/logo.svg";
+import { useNavigate } from "react-router-dom";
 export const NavBar = () => {
-
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -14,19 +14,19 @@ export const NavBar = () => {
       } else {
         setScrolled(false);
       }
-    }
+    };
 
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [])
+  }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
-  }
+  };
   const navigate = useNavigate();
   return (
-    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+    <Navbar expand="md" className={scrolled ? "scrolled" : "" && "fitNav"}>
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} alt="Logo" />
@@ -36,13 +36,23 @@ export const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+            <Nav.Link
+              href="#home"
+              className={
+                activeLink === "home" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("home")}
+            >
+              Home
+            </Nav.Link>
           </Nav>
           <span className="navbar-text">
-            <button onClick={() => navigate('/login')} className="vvd"><span>Login</span></button>
+            <button onClick={() => navigate("/login")} className="vvd">
+              <span>Login</span>
+            </button>
           </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  )
-}
+  );
+};

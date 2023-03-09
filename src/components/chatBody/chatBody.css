@@ -1,0 +1,7 @@
+.main__chatbody {
+  flex-grow: 1;
+  background: linear-gradient(79deg, black 45%, rgb(73, 1, 73));
+  /* border-radius: 10px; */
+  padding: 15px 20px;
+  display: flex;
+}

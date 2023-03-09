@@ -1,0 +1,13 @@
+.nav {
+  background: linear-gradient(79deg, black 45%, rgb(73, 1, 73));
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+.nav img {
+  /* display: block; */
+  padding-left: 20px;
+  height: 25px;
+  cursor: pointer;
+}
