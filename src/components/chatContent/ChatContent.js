@@ -1,11 +1,7 @@
-import React, { Component, useState, createRef, useEffect } from "react";
-
+import React, { Component, createRef } from "react";
 import "./chatContent.css";
 import Avatar from "../chatList/Avatar";
-// import { Plus } from "react-bootstrap-icons";
-// import { Plus } from "@fortawesome/free-solid-svg-icons";
 import ChatItem from "./ChatItem";
-// import { faFontAwesomeIcon } from "@fortawesome/free-solid-svg-icons";
 
 export default class ChatContent extends Component {
   messagesEndRef = createRef(null);
@@ -40,8 +36,8 @@ export default class ChatContent extends Component {
 
   componentDidMount() {
     window.addEventListener("keydown", (e) => {
-      if (e.keyCode == 13) {
-        if (this.state.msg != "") {
+      if (e.keyCode === 13) {
+        if (this.state.msg !== "") {
           this.chatItms.push({
             key: 1,
             type: "",
@@ -102,7 +98,7 @@ export default class ChatContent extends Component {
         <div className="content__footer">
           <div className="sendNewMessage">
             <button className="addFiles">
-              <i class="fa-solid fa-plus"></i>
+              <i className="fa fa-plus"></i>
             </button>
             <input
               type="text"
@@ -111,7 +107,7 @@ export default class ChatContent extends Component {
               value={this.state.msg}
             />
             <button className="btnSendMsg" id="sendMsgBtn">
-              <i className="fa fa-paper-plane"></i>
+              <i class="fa fa-send"></i>
             </button>
           </div>
         </div>

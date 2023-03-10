@@ -103,7 +103,7 @@ nav.navbar {
   justify-content: center;
   padding: 18px 0;
   position: fixed;
-  width: 76%;
+  width: 100%;
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
@@ -274,7 +274,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h3 {
-  /* font-size: 65px; */
+  font-size: 65px;
   font-weight: 600;
   letter-spacing: 0.4px;
   line-height: 1;
