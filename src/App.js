@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import "./App.css";
 import LoginRegister from "./pages/login_register/LoginRegister";
 import Home from "./pages/Home/Home";
-import MainPage from "./pages/MainPage/MainPage";
+import MainPage from "./pages/MainPage/src/MainPage";
 
 function App() {
 
