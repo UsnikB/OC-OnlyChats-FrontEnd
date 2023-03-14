@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from 'D:/College(Term 3)/OC-OnlyChats-FrontEnd/src/pages/Home/assets/img/gb.jpg';
+import img from '../Home/assets/img/gb.jpg';
 import ContactListComponent from "./components/ContactListComponents";
 import ConversationComponent from "./components/ConversationComponents";
 
