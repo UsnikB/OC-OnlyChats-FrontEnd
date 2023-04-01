@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, MenuContext, MenuItem, MenuItemFR, ProSidebarProvider, SubMenu, SubMenuFR, menuClasses, sidebarClasses, useProSidebar } from "react-pro-sidebar";
+import { Menu, MenuContext, MenuItem, MenuItemFR, ProSidebarProvider, ProSidebar, SubMenu, SubMenuFR, menuClasses, sidebarClasses, useProSidebar } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 
