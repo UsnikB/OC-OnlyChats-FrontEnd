@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 export const Login = (props) => {
     const [username, setUsername] = useState("");
     const [password, setPass] = useState("");
     const [successMsg, setSuccessMsg] = useState("");
     const [errorMsg, setErrorMsg] = useState("");
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -20,6 +22,7 @@ export const Login = (props) => {
                 if (response.ok) {
                     setSuccessMsg("Logged In successfully");
                     setErrorMsg("");
+                    
                 } else {
                     setSuccessMsg("");
                     setErrorMsg("Login Failed, username or password incorrect");
@@ -29,6 +32,8 @@ export const Login = (props) => {
             .then((data) => {
                 console.log(data)
                 document.cookie = `access_token=${data.access_token}; expires=Thu, 01 Jan 2030 00:00:00 UTC; path=/`;
+                document.cookie = `current_user=${data.current_user}; expires=Thu, 01 Jan 2030 00:00:00 UTC; path=/`;
+                navigate('/');
             })
             // .then((data) => {
             //     const accessToken = data.access_token;
