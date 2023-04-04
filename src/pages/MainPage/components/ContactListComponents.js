@@ -119,4 +119,3 @@ const ContactListComponent = () => {
 };
 
 export default ContactListComponent;
-
