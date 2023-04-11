@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  agora-frontend:
+    build: ./videoapp
+    ports:
+      - "9000:80"
+
+  ocfrontend:
+    build: .
+    ports:
+      - "3800:3000"

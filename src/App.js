@@ -6,6 +6,7 @@ import LoginRegister from "./pages/login_register/LoginRegister";
 import Home from "./pages/Home/Home";
 import MainPage from "./pages/MainPage/MainPage";
 import AdminPage from "./pages/Adminpage/src/Admin";
+import VideCall from "./pages/Videocall/Video";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/" element={<Home/>} />
         <Route exact path="/start" element={<MainPage/>} />
         <Route exact path="/admin/*" element={<AdminPage/>} />
+        <Route exact path="/video/*" element={<VideCall/>} />
       </Routes>
     </Router>
   );

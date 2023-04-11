@@ -14,6 +14,9 @@ RUN npm install
 
 # RUN npm install bootstrap --save
 
+RUN npm install agora-rtc-react
+# RUN npm i agora-token
+
 # RUN npm install --save animate.css-react
 # Copy the rest of the application code to the container
 COPY . .
