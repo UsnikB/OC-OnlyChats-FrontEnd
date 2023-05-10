@@ -2,12 +2,12 @@
 This is the React frontend for a video conferencing site, deployed in Docker.
 
 ## Screenshots
-![image](https://github.com/UsnikB/OC-OnlyChats-FrontEnd/assets/22489448/921a8ab4-6098-4c26-86c4-dc7f03aa889a)
 
-![image](https://github.com/UsnikB/OC-OnlyChats-FrontEnd/assets/22489448/5690bfd9-c3ab-4abf-9a1c-6f7750279048)
+![Updated-1](https://github.com/UsnikB/OC-OnlyChats-FrontEnd/assets/22489448/f47f28c0-5e17-438a-b997-3c211137a097)
 
-![image](https://github.com/UsnikB/OC-OnlyChats-FrontEnd/assets/22489448/871b04ce-6345-4daf-a38f-7071b4205b50)
+![Updated-2](https://github.com/UsnikB/OC-OnlyChats-FrontEnd/assets/22489448/86c5fed6-0af5-441e-8f99-342c41bdb2c9)
 
+![Updated-3](https://github.com/UsnikB/OC-OnlyChats-FrontEnd/assets/22489448/4e0f13af-1699-4565-a6a0-72a275aa22e8)
 
 ## Prerequisites
 - Docker installed on your machine
