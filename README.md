@@ -8,7 +8,7 @@ This is the React frontend for a video conferencing site, deployed in Docker.
 ## Installation
 1. Clone the repository: 
 ```
-git clone https://github.com/[YOUR_GITHUB_USERNAME]/OC-OnlyChats-FrontEnd.git
+git clone https://github.com/UsnikB/OC-OnlyChats-FrontEnd.git
 ```
 2. Navigate to the project directory: 
 
